@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohamed Hazem Portfolio</title>
+  <!-- مكتبات -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: "Cairo", Arial, sans-serif;
+      background: #0a0a0a;
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #ff3333;
+      text-shadow: 0 0 20px rgba(255,0,0,0.6);
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ccc;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      z-index: 1;
+    }
+    nav {
+      background: rgba(20, 20, 20, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ff3333; }
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+    h2 {
+      color: #ff3333;
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-align: center;
+    }
+    .projects {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .project {
+      flex: 1 1 calc(33% - 20px);
+      background: rgba(255,255,255,0.08);
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .project:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255,0,0,0.4);
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #eee;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ff3333;
+      
+    }
+
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: #777;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Hero -->
+  <header>
+    <h1 data-aos="zoom-in">Mohamed Hazem</h1>
+    <p data-aos="fade-up">Programmer | Graphic Designer | Technology Enthusiast</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+Hello! I'm Mohamed Hazem, a web developer and graphic designer. I have a passion for design and programming, and I love developing user-friendly and modern websites and applications.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project" data-aos="flip-left">
+        <img src="D:\Graphic Designing\حسين فايز\Finished\Design\احياء وش.jpg">
+        <h3>Project 1</h3>
+        <p>A simple description of the project.</p>
+      </div>
+      <div class="project" data-aos="flip-left">
+        <img src="D:\Graphic Designing\حسين فايز\Finished\Design\علوم متكاملة وش.jpg">
+        <h3>Project 2</h3>
+        <p>A simple description of the project.</p>
+      </div>
+      <div class="project" data-aos="flip-left">
+        <img src="D:\Graphic Designing\حسين فايز\Finished\Design\جيولوجيا وش.jpg">
+        <h3>Project 3</h3>
+        <p>A simple description of the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>التواصل</h2>
+
+    <div class="social-icons">
+      <p>Email : <a href="https://mail.google.com/mail/u/0/#inbox">mohamedxhazem@gmail.com</a></p>
+     <!--  <a href="https://gmail.com/mohamedxhazem" target="_blank">📩 Email</a>  -->
+      <a href="https://github.com/MohamedxLegend/" target="_blank">🐱 GitHub</a>
+      <a href="https://www.linkedin.com/in/mohamedhazem07/" target="_blank">💼 LinkedIn</a>
+      <a href="https://www.behance.net/379ffb99/" target="_blank">🎨 Behance</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  /* Particles.js Config */
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 300 },
+      "size": { "value": 3 },
+      "color": { "value": "#ff3333" },
+      "line_linked": {
+        "enable": true,
+        "color": "#ff3333",
+        "opacity": 0.5
+      },
+      "move": { "speed": 3 }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": false },
+        "onclick": { "enable": false }
+      }
+    },
+    "retina_detect": true
+  });
+
+  /* اجعل الـ particles تطارد الماوس */
+  //let mouse = { x: null, y: null };
+//
+  //document.addEventListener("mousemove", function(e) {
+  //  mouse.x = e.clientX;
+  //  mouse.y = e.clientY;
+  //});
+//
+  //setInterval(() => {
+  //  if (window.pJSDom && window.pJSDom[0]) {
+  //    let particles = window.pJSDom[0].pJS.particles.array;
+  //    particles.forEach(p => {
+  //      if (mouse.x && mouse.y) {
+  //        let dx = mouse.x - p.x;
+  //        let dy = mouse.y - p.y;
+  //        let dist = Math.sqrt(dx * dx + dy * dy);
+//
+  //        if (dist < 250) { // مسافة الجذب
+  //          p.vx += dx / dist * 0.05; // سرعة الجذب
+  //          p.vy += dy / dist * 0.05;
+  //        }
+  //      }
+  //    });
+  //  }
+  //}, 30);
+</script>
+
+
+</body>
+</html>
